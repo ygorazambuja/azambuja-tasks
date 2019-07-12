@@ -12,4 +12,4 @@ consign()
   .into(app);
 
 app.db = db;
-app.listen(3000, () => {});
+app.listen(process.env.PORT || 3000, () => {});
